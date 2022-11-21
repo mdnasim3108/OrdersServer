@@ -13,7 +13,7 @@ app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
 const { v4: uuidv4 } = require("uuid")
 const stripe = require("stripe")("sk_test_51Lw56vSFAyIqkgIKVFt0lCVJ4CK0uYfw9TURYk12rZe7DkOLXi67GDzNf9LygQAXgA3JbuM5Ix7epxXCBnEH970t00ZEzu4Awv")
 mongoose.connect(
-    process.env.MONGODB_CONNECTION_STRING,
+    "mongodb+srv://nasim:nasim@foodapp.m8qxf95.mongodb.net/?retryWrites=true&w=majority",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
