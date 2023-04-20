@@ -104,4 +104,7 @@ app.post('/myorder',async(req,res)=>{
     const user=await Order.findOne({Name})
     res.send(user)
 })
+app.get("/",(req,res)=>{
+    res.send("success")
+})
 
